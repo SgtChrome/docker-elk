@@ -3,3 +3,8 @@
 ## https://github.com/elastic/logstash/blob/master/docker/data/logstash/config/logstash-full.yml
 #
 http.host: "0.0.0.0"
+monitoring.elasticsearch.hosts: "http://elasticsearch:9200"
+pipeline.ordered: false
+pipeline.workers: 1
+pipeline.batch.size: 50
+pipeline.batch.delay: 500
